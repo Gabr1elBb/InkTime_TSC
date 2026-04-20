@@ -41,28 +41,28 @@ featuring a 1.54" e-paper display and optimized for ultra-low power consumption.
  +---GPIO-> [ User Buttons ]
 ```
 
-## Bill Of Materials(BOM)
+## Bill Of Materials (BOM)
+
 | Designator | Component | Package | Manufacturer | Description / Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| **U1** | **nRF52840** | aQFN-73 | Nordic Semi | SoC Bluetooth 5.0 (Procesor principal) |
-| **IC1** | **BQ25180Y** | DSBGA-8 | Texas Inst. | Charger IC Li-Ion (Management baterie) |
-| **IC2** | **DRV2605Y** | DSBGA-9 | Texas Inst. | Haptic Driver (Control motor vibrații) |
-| **IC9** | **RT6160AWSC** | WLCSP-15 | RICHTEK | Buck-Boost Regulator 3.3V |
-| **IC3** | **BMA423** | LGA-12 | BOSCH | Accelerometru (Detectie miscare) |
-| **U3 / IC6** | **MAX17048** | TDFN-8 | Maxim/ADI | Monitorizare nivel baterie (Fuel Gauge) |
-| **ANT1** | **2450AT18B100E** | 1.4mm | JOHANSON | Antena Chip 2.45GHz |
-| **J1** | **503480-2400** | FPC-24 | Molex | Conector ecran (0.5mm pitch) |
-| **J4** | **KH-TYPE-C-16P** | SMT | Kinghelm | Port USB Type-C |
-| **Q3** | **SI1308EDL** | SOT-323 | Vishay | MOSFET N-Ch (Comutare putere) |
-| **D3** | **USBLC6-2** | SOT-23-6 | STMicro | Protectie ESD linii date USB |
+| **U1** | [**nRF52840**](https://www.nordicsemi.com/Products/nRF52840) | aQFN-73 | Nordic Semi | SoC Bluetooth 5.0 (Procesor principal) |
+| **IC1** | [**BQ25180Y**](https://www.ti.com/product/BQ25180) | DSBGA-8 | Texas Inst. | Charger IC Li-Ion (Management baterie) |
+| **IC2** | [**DRV2605Y**](https://www.ti.com/product/DRV2605) | DSBGA-9 | Texas Inst. | Haptic Driver (Control motor vibrații) |
+| **IC9** | [**RT6160AWSC**](https://www.richtek.com/Products/Product%20List/RT6160) | WLCSP-15 | RICHTEK | Buck-Boost Regulator 3.3V |
+| **IC3** | [**BMA423**](https://www.bosch-sensortec.com/products/motion-sensors/accelerometers/bma423/) | LGA-12 | BOSCH | Accelerometru (Detectie miscare) |
+| **U3 / IC6** | [**MAX17048**](https://www.analog.com/en/products/max17048.html) | TDFN-8 | Maxim/ADI | Monitorizare nivel baterie (Fuel Gauge) |
+| **ANT1** | [**2450AT18B100E**](https://www.johansontechnology.com/datasheets/2450AT18B100E.pdf) | 1.4mm | JOHANSON | Antena Chip 2.45GHz |
+| **J1** | [**503480-2400**](https://www.molex.com/en-us/products/part-detail/5034802400) | FPC-24 | Molex | Conector ecran (0.5mm pitch) |
+| **J4** | [**KH-TYPE-C-16P**](https://www.kinghelm.com.cn/product-item-1589.html) | SMT | Kinghelm | Port USB Type-C |
+| **Q3** | [**SI1308EDL**](https://www.vishay.com/en/product/71996/) | SOT-323 | Vishay | MOSFET N-Ch (Comutare putere) |
+| **D3** | [**USBLC6-2**](https://www.st.com/en/protection-devices/usblc6-2sc6y.html) | SOT-23-6 | STMicro | Protectie ESD linii date USB |
 | **X1, X2** | **Crystal** | 2016 / 2012 | Generic | Cuart 32MHz (Sistem) / 32.768kHz (RTC) |
 | **L2** | **10µH** | 0402 | Generic | Inductor critic pentru circuitul de boost e-Paper |
 | **R1_EP_DR** | **0.47 Ω** | 0201 | Generic | Rezistenta de sens (RESE) pentru ecran |
 | **R5, R7, R8** | **10k Ω** | 0201 | Generic | Rezistente Pull-up (I2C / Linii control) |
-| **C1-EP-DR, C39**| **10µF** | 0201 | Generic | Condensatori filtrare alimentare |
-| **C1, C2, C17, C18**| **12pF** | 0201 | Generic | Condensatori pentru cuart (X1, X2) |
+| **C1-EP-DR, C39** | **10µF** | 0201 | Generic | Condensatori filtrare alimentare |
+| **C1, C2, C17, C18** | **12pF** | 0201 | Generic | Condensatori pentru cuart (X1, X2) |
 | **C2-EP-DR** | **4.7µF / 25V** | 0201 | Generic | Stocare energie tensiuni mari ecran (VGH/VGL) |
-
 ## Hardware Implementation Details
 
 ### Energy Management Strategy
